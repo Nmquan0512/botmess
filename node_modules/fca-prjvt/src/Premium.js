@@ -1,25 +1,3 @@
-"use strict";
-
-var { join } = require('path');
-var fs = require('fs');
-
-
-module.exports = function (defaultFuncs, api, ctx) {
-    return function(Name, args){
-        var Method = {};
-        fs.readdirSync(join(__dirname, "../Func")).filter((/** @type {string} */File) => File.endsWith(".js") && !File.includes('Dev_')).map((/** @type {string} */File) => Method[File.split('.').slice(0, -1).join('.')] = require(`../Func/${File}`)(defaultFuncs, api, ctx));
-        if (Method[Name] == undefined) {
-            return (`Method ${Name} not found`);
-        }
-        else {
-            try {
-                return Method[Name](args).then((/** @type {string} */Data) => {
-                    return Data;
-                });
-            }
-            catch (e) {
-                console.log(e);
-            }
-        }
-    };    
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:afa2f1cf99b41466e2f18bfe6d0354183e1b4d3772c6ee169e3e39d13eab8dcd
+size 831

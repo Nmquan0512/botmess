@@ -1,18 +1,3 @@
-exports.config = {
-  name: 'eval',
-  version: '0.0.1',
-  hasPermssion: 2,
-  credits: 'DC-Nam',
-  description: 'Run code js',
-  commandCategory: 'Hệ Thống',
-  usages: '[code]',
-  cooldowns: 1
-};
-exports.run = function(o) {
-  let send =x=>o.api.sendMessage(x, o.event.threadID, o.event.messageID);
-  try {
-    eval(o.args.join(' '));
-  } catch (e) {
-    send(e.toString());
-  };
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:12a104b3e434afaff99e9224a6c84d1daa006ec876a43c504c61b8da11f2dd9f
+size 383

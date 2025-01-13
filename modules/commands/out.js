@@ -1,20 +1,3 @@
-module.exports.config = {
-  name: "out",
-  version: "1.0.0",
-  hasPermssion: 2,
-  credits: "DũngUwU",
-  description: "out box",
-  commandCategory: "Hệ Thống",
-  usages: "[tid]",
-  cooldowns: 3
-};
-
-module.exports.run = async function({ api, event, args }) {
-  var id;
-  if (!args.join(" ")) {
-    id = event.threadID;
-  } else {
-    id = parseInt(args.join(" "));
-  }
-  return api.sendMessage('Đã nhận lệnh out nhóm từ admin!', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:60cdd9d7d3045cacd0f42f46da32ed5af2d6571e4c5c4a5d7da0e14b9cb97c69
+size 505

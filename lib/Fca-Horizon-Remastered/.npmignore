@@ -1,6 +1,3 @@
-*.sqlite
-CountTime.json
-./Extra/Database/*.sqlite
-/node_modules
-package-lock.json
-node_modules
+version https://git-lfs.github.com/spec/v1
+oid sha256:342c0113769f853748a8cb6dd4b89b74b934f36eb031dd0f5fd2e7a872cad2f8
+size 94

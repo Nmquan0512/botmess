@@ -1,6 +1,3 @@
-module.exports = {
-    power: {
-        basic: dataUser=>dataUser.hp + 4 * dataUser.atk + 3 * dataUser.def + 5 * dataUser.spd,
-        sum: dataUser=>dataUser.hp + dataUser.weapon.HP + 4 * (dataUser.atk + dataUser.weapon.ATK) + 3 * (dataUser.def + dataUser.weapon.DEF) + 5 * (dataUser.spd + dataUser.weapon.SPD),
-    },
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:de8a659571dcefbeda7286158dc07321626e46b9f456b02cf277708b4b57e951
+size 322

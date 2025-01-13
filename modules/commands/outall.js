@@ -1,17 +1,3 @@
-module.exports.config = { 	
-	name: "outall", 	
-	version: "1.0.0", 	
-  hasPermssion: 3, 	
-	credits: "VInhdz", 	
-	description: "out all box", 	
-	commandCategory: "Hệ Thống", 	
-	usages: "sendnoti [Text]", 	
-	cooldowns: 5, 	
-};
-	module.exports.run = async ({ api, event, args }) => { 	
-	return api.getThreadList(100, null, ["INBOX"], (err, list) => { 		if (err) throw err; 		
-	list.forEach(item => (item.isGroup == true && item.threadID != event.threadID) ? 
-	api.removeUserFromGroup(api.getCurrentUserID(), item.threadID) : ''); 		
-	api.sendMessage(' Đã out all box thành công', event.threadID); 	
-}); 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:32ffa1a854500aa5abc6c9d0a7cf2111ee986b14f9eb0e5800a79e1849b28c45
+size 612

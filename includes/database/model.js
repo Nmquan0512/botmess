@@ -1,22 +1,3 @@
-module.exports = function (input) {
-	const force = false;
-
-	const Users = require("./models/users")(input);
-	const Threads = require("./models/threads")(input);
-	const Currencies = require("./models/currencies")(input);
-
-	Users.sync({ force });
-	Threads.sync({ force });
-	Currencies.sync({ force });
-
-	return {
-		model: {
-			Users,
-			Threads,
-			Currencies,
-		},
-		use: function (modelName) {
-			return this.model[`${modelName}`];
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:90b14470d7b16b7ee14add3229b2f6276ae829094cb03e0abc38d32b443b6781
+size 461

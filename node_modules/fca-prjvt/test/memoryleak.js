@@ -1,18 +1,3 @@
-const memwatch = require('memwatch-next');
-
-// bắt đầu theo dõi memory
-memwatch.on('leak', function(info) {
-console.error('memory leak detected:');
-console.error(info);
-});
-
-// Tạo một object để tạo memory leak
-let myObj = {};
-setInterval(function() {
-for (let i = 0; i < 10000; i++) {
-myObj[i] = new Array(10000);
-}
-}, 1000);
-
-// force garbage collection để release memory leak
-memwatch.gc();
+version https://git-lfs.github.com/spec/v1
+oid sha256:765e76fb29e0d65f7a47e99408297c10cf7b482cf5b7b6e4b77d64f4aaacd7ca
+size 412

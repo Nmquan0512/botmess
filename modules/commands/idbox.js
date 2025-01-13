@@ -1,17 +1,3 @@
-module.exports.config = {
-  name: "idbox",
-  version: "1.0.0",
-  hasPermssion: 0,
-  credits: "manhIT",
-  description: "Kiểm tra thông tin nhóm chat.",
-  commandCategory: "Nhóm",
-  usages: "",
-  cooldowns: 5,
-  dependencies: {
-
-  }
-};
-
-module.exports.run = async({api,event, Threads}) => {
-    return api.sendMessage(`${event.threadID}`, event.threadID, event.messageID);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b96e91dead2d11a9afaaf44d66f858e034fe4d3d3811c022093d44455c04665a
+size 377

@@ -1,16 +1,3 @@
-const getIP = require('ipware')().get_ip;
-const fs = require("fs-extra");
-module.exports = function (req, res, next) {
-  const listIPBlocked = JSON.parse(fs.readFileSync('./blockedIP.json', { encoding: 'utf-8' }));
-  if (listIPBlocked.includes(getIP(req).clientIp)) {
-    res.status(403).send({
-      AUTHOR: 'R1zaX',
-      STATUS: 'ERROR 404',
-      MESSAGE: 'NGU THÌ CHẾT THÔI, LẦN SAU CHỪA TẬT XÀM LỒN NHÉ 😏',
-      INBOX: 'MUỐN GỠ THÌ INB FACEBOOK'
-    });
-  } 
-  else {
-    next();
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:175a2c9e600ebf56435f5992c0e2efba4631fa7f64094619316725fa6e2c1d1d
+size 514

@@ -1,16 +1,3 @@
-"use strict";
-
-const utils = require("../utils");
-
-module.exports = function (defaultFuncs, api, ctx) {
-  return function addExternalModule(moduleObj) {
-    if (utils.getType(moduleObj) == "Object") {
-      for (let apiName in moduleObj) {
-        if (utils.getType(moduleObj[apiName]) == "Function") api[apiName] = moduleObj[apiName](defaultFuncs, api, ctx);
-        else throw new Error(`Item "${apiName}" in moduleObj must be a function, not ${utils.getType(moduleObj[apiName])}!`);
-
-      }
-    }
-    else throw new Error(`moduleObj must be an object, not ${utils.getType(moduleObj)}!`);
-  };
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac3c486e59fd70406a77e4838af32ef008e63381db65b5e010a5c80a1b1e3cfd
+size 600

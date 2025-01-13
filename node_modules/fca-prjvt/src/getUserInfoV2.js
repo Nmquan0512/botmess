@@ -1,32 +1,3 @@
-/* eslint-disable linebreak-style */
-"use strict";
-
-module.exports = function (defaultFuncs, api, ctx) {
-    return function getUserInfoV2(id, callback) {
-      var resolveFunc = function () { };
-      var rejectFunc = function () { };
-      var returnPromise = new Promise(function (resolve, reject) {
-        resolveFunc = resolve;
-        rejectFunc = reject;
-      });
-  
-      if (!callback) {
-        callback = function (err, userInfo) {
-          if (err) return rejectFunc(err);
-          resolveFunc(userInfo);
-        };
-      }
-    try {
-      var { getInfo } = require('../Extra/ExtraAddons');
-      getInfo(id,ctx.jar,ctx,defaultFuncs)
-        .then(data => {
-          //api.Horizon_Data([data], "Users", "Post");
-        return callback(null, data);
-      });
-    }
-    catch (e) {
-      return callback(null, e);
-    }
-    return returnPromise;
-    };
-  };
+version https://git-lfs.github.com/spec/v1
+oid sha256:6666bbff870e536cacedc9e7112575c849c4d8721a229c544abdaf924a657a12
+size 873
