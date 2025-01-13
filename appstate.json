@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b4cfc80dab9b4155ddd7933e2c985b64c8a7e98c36effc69d30e5e4992dbca6
-size 775502
+[
+    {
+        "key": "sb",
+        "value": "b6FQZ2LG2O_LQ6LRApuK_-Z_",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.098Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    },
+    {
+        "key": "datr",
+        "value": "b6FQZzgCZWHT-SkzRZH5Eh5S",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.099Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    },
+    {
+        "key": "c_user",
+        "value": "61554095535246",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.099Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    },
+    {
+        "key": "cppo",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.099Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    },
+    {
+        "key": "wd",
+        "value": "1680x832",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.099Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    },
+    {
+        "key": "presence",
+        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1736752363268%2C%22v%22%3A1%7D",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.099Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    },
+    {
+        "key": "fr",
+        "value": "1383U8KavxdVixdfX.AWVWb3s-5f7zmlsWKbkVWUyNVBk.BnhLzr..AAA.0.0.BnhLzr.AWW77GvejCc",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.099Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    },
+    {
+        "key": "xs",
+        "value": "21%3A3vlgpm9kbeiGSA%3A2%3A1736701976%3A-1%3A13653%3A%3AAcW_goX7kzGcHZqyK5B-Bmibp3yd9QojbR08w84OEA",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-13T07:12:45.099Z",
+        "lastAccessed": "2025-01-13T07:12:45.099Z"
+    }
+]
